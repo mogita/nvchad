@@ -17,11 +17,11 @@ vim.keymap.del("n", "<C-s>")
 map("n", "ss", ":split<Return><C-w>w", { desc = "Split horizontal pane" })
 map("n", "sv", ":vsplit<Return><C-w>w", { desc = "Split vertical pane" })
 
--- Switch between windows (using Shift+Alt combinations)
-map("n", "<S-M-j>", "<C-w>h", { desc = "Window left" })
-map("n", "<S-M-l>", "<C-w>l", { desc = "Window right" })
-map("n", "<S-M-k>", "<C-w>j", { desc = "Window down" })
-map("n", "<S-M-i>", "<C-w>k", { desc = "Window up" })
+-- Switch between windows (using Leader key)
+map("n", "<leader>j", "<C-w>h", { desc = "Window left" })
+map("n", "<leader>l", "<C-w>l", { desc = "Window right" })
+map("n", "<leader>k", "<C-w>j", { desc = "Window down" })
+map("n", "<leader>i", "<C-w>k", { desc = "Window up" })
 
 -- Resize windows
 map("n", "<C-w><left>", "<C-w><", { desc = "Resize window to left" })
