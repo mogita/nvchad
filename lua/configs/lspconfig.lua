@@ -11,6 +11,8 @@ local servers = {
   "rust_analyzer",
   "jsonls",
   "biome",
+  "pyright",
+  "ruff"
 }
 vim.lsp.enable(servers)
 
