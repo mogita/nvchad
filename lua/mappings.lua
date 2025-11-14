@@ -39,3 +39,7 @@ map("n", "C", '"_C', { desc = "Change till eol without yanking" })
 -- Ctrl+Enter to insert new line
 map("n", "<C-cr>", "<End><cr>i", { desc = "Insert new line from current cursor position" })
 map("i", "<C-cr>", "<End><cr>", { desc = "Insert new line from current cursor position" })
+
+-- Ensure Tab is exclusively used for Augment completion
+-- This mapping ensures Tab calls Augment's accept function and falls back to normal tab behavior
+map("i", "<Tab>", "<cmd>call augment#Accept('\\t')<cr>", { desc = "Accept Augment suggestion or insert tab" })
