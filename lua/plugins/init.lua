@@ -39,4 +39,5 @@ return {
     end,
   },
   { "akinsho/git-conflict.nvim", version = "*", config = true },
+  { "augmentcode/augment.vim", lazy = false },
 }
