@@ -39,4 +39,5 @@ return {
     end,
   },
   { "akinsho/git-conflict.nvim", version = "*", config = true },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 }
