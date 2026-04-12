@@ -1,4 +1,5 @@
 return {
+  { "github/copilot.vim", lazy = false },
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
